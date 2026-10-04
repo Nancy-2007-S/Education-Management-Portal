@@ -5,7 +5,9 @@
 ![Node](https://img.shields.io/badge/Node.js-18.x-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-Admin-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 
-**Education Management Portal (EduPortal)** is an autonomous, full-stack academic administration platform. It unifies student progress tracking, faculty class management, institutional metrics, and intelligent academic assistance into a single, cohesive web application.
+**Education Management Portal (EduPortal)** is a full-stack, role-based academic administration platform. It unifies student progress tracking, faculty class management, institutional metrics, and intelligent academic assistance into a single, cohesive web application.
+
+---
 
 ## The Problem
 Modern educational institutions often rely on fragmented software tools for attendance, grading, assignment distribution, and student risk tracking. This fragmentation leads to:
@@ -20,6 +22,41 @@ EduPortal consolidates academic management into a unified system by:
 3. **Attendance & Absence Logs**: Subject-wise attendance tracking and monthly calendar ledgers with automated excuse workflows.
 4. **Early Academic Risk Alerts**: Intelligent student risk monitoring highlighting students needing academic support.
 5. **EduAI Assistant**: An integrated academic assistant providing instant guidance, study planning, and navigation assistance.
+
+---
+
+## Core Feature Breakdown
+
+### Student Portal Features
+- **Interactive Dashboard**: Real-time StatCards displaying Cumulative GPA, Enrolled Courses, Overall Attendance Percentage, and Study Streak.
+- **Active Course Directory**: Visual progress tracking for enrolled subjects (e.g., Data Structures, Calculus, Physics, DBMS) with grade chips and completion bars.
+- **Grades & GPA Ledger**:
+  - Interactive Course GPA Directory with instant course selection.
+  - Assessment Ledger Breakdown detailing component weights (Quizzes 15%, Labs 35%, Midterms 25%, Finals 25%), numerical scores, and visual performance progress bars.
+  - Provisional grade notice banner alerting students to board verification schedules.
+- **Attendance & Log Directory**:
+  - Subject-wise Attendance Logs formatted with percentage progress bars and status badges (Good Standing, Satisfactory, Needs Attention).
+  - Monthly Calendar Grid featuring day-by-day attendance status records and a built-in Request Excuse workflow modal.
+- **EduAI Study Recommendations**: Automated study task checklist prioritizing daily assignments and review topics with one-click completion.
+
+### Teacher Dashboard Features
+- **Faculty Command Center**: Real-time metrics tracking Total Enrolled Students, Active Classes Taught, Active Assignments, Average Class Attendance, and Pending Grading items.
+- **Quick Action Bar**: One-click shortcuts for creating assignments, marking class attendance, entering marks, and opening AI analytics.
+- **Assignment Submissions Ledger**:
+  - Filterable assignment directory with category search and submission counts.
+  - Detailed student submission ledger displaying file attachments, submission timestamps, status tags (Submitted, Late, Graded), and online score entry.
+- **Class Rosters & Attendance**: Real-time daily attendance logger with present/absent toggles and instant history records.
+- **Performance Risk Alerts**: Automated AI-driven risk indicators highlighting students who need additional academic assistance.
+
+### Admin Portal Features
+- **Institutional Telemetry**: Executive metrics covering Total Active Students, Faculty Members, Active Departments, System Uptime, and Monthly Operating Budgets.
+- **Administrative Control Panel**: User management tools for adding new students and teachers, viewing system audit logs, and backing up system data.
+- **Department Analytics**: Department enrollment distribution metrics and live system activity logs.
+
+### EduAI Floating Assistant
+- **Contextual AI Bot**: Integrated floating assistant available across all pages offering course advice, study schedule suggestions, GPA calculations, and portal navigation help.
+
+---
 
 ## Architecture & Tech Stack
 
@@ -44,6 +81,8 @@ graph TD;
     Services --> EduAI[EduAI Assistant Engine]
 ```
 
+---
+
 ## Repository Structure
 
 ```text
@@ -63,11 +102,15 @@ Education-Management-Portal/
         └── services/        # Core business logic services
 ```
 
+---
+
 ## Security & Data Safeguards
 
 - **Role-Based Isolation**: Access control enforced at both route guard and Express middleware levels.
 - **Secret Protection**: Firebase credentials and private environment keys are excluded via `.gitignore`.
 - **Defensive Error Handling**: Optional chaining and fallback data initializations prevent unexpected rendering exceptions.
+
+---
 
 ## Getting Started
 
@@ -89,6 +132,8 @@ npm install
 npm run dev
 ```
 
+---
+
 ## Demo Account Access
 
 You can test the application instantly using the 1-Click Demo Login on the sign-in page:
@@ -96,4 +141,6 @@ You can test the application instantly using the 1-Click Demo Login on the sign-
 - **Teacher Demo**: Access faculty command center, assignment grading ledger, and student risk insights.
 - **Admin Demo**: Access institutional analytics, user management, and system activity logs.
 
+---
 
+Designed and developed by **Nancy S.**

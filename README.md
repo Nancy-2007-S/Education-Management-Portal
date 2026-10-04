@@ -140,7 +140,3 @@ You can test the application instantly using the 1-Click Demo Login on the sign-
 - **Student Demo**: Access full student dashboard, GPA transcript, attendance logs, and EduAI tasks.
 - **Teacher Demo**: Access faculty command center, assignment grading ledger, and student risk insights.
 - **Admin Demo**: Access institutional analytics, user management, and system activity logs.
-
----
-
-Designed and developed by **Nancy S.**
